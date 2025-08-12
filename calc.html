@@ -19,51 +19,75 @@
 <h1>Flashcards</h1>
 <div class="flashcard-container">
     <div class="flashcard" onclick="flipCard(this)">
-        <div card="front">Derivative of sin(x)</div>
-        <div card="back">cos(x)</div>
+        <div class="front">Derivative of sin(x)</div>
+        <div class="back">cos(x)</div>
     </div>
+
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="front">Integral of 1/x dx</div>
+    <div class="back">ln|x| + C</div>
 </div>
 
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">Integral of 1/x dx</div>
-    <div card="back">ln|x| + C</div>
-</div>
-
-<div class="flashcard" onclick="flipCard(this)">
-    <div card="front">Limit as x->0 of sin(x)/x</div>
-    <div card="back">1</div>
+    <div class="front">Limit as x->0 of sin(x)/x</div>
+    <div class="back">1</div>
 </div>
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">Integral of e^x dx</div>
-    <div card="back">e^x + C</div>
+    <div class="front">Integral of e^x dx</div>
+    <div class="back">e^x + C</div>
+</div>
 
     <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">What does the fundamental theorem of calculus connect?</div>
-    <div card="back">Differentiation and integration</div>
+    <div class="front">What does the fundamental theorem of calculus connect?</div>
+    <div class="back">Differentiation and integration</div>
 </div>
 
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">Derivative of x^n</div>
-    <div card="back">nx^(n-1)</div>
+    <div class="front">Derivative of x^n</div>
+    <div class="back">nx^(n-1)</div>
 </div>
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">What is an inflection point?</div>
-    <div card="back">Point where concavity changes</div>
+    <div class="front">What is an inflection point?</div>
+    <div class="back">Point where concavity changes</div>
 </div>
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">What does concave up mean?</div>
-    <div card="back">Slope is increasing / Second derivative is positive</div>
+    <div class="front">What does concave up mean?</div>
+    <div class="back">Slope is increasing / Second derivative is positive</div>
 </div>
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">What is removable discontinuity?</div>
-    <div card="back">Where the limit exists but function is DNE</div>
+    <div class="front">What is removable discontinuity?</div>
+    <div class="back">Where the limit exists but function is DNE</div>
 </div>
 <div class="flashcard" onclick="flipCard(this)">
-    <div card="front">What does the second derivative tell you?</div>
-    <div card="back">Whether a critical point is a max or min</div>
+    <div class="front">What does the second derivative tell you?</div>
+    <div class="back">Whether a critical point is a max or min</div>
 </div>
 </div>
 <br> <br> <br>
 <h1>Knowledge Quiz</h1>
+<p>1. What is the derivative of sin(x)?</p>
+<input type="radio" name="q1" value="cos(x)">cos(x)<br>
+<input type="radio" name="q1" value="-sin(x)">-sin(x)<br>
+<input type="radio" name="q1" value="-cos(x)">-cos(x)<br>
+
+<p>2. What is the integral of x^2 dx?</p>
+<input type="radio" name="q2" value="2x+C">2x + C<br>
+<input type="radio" name="q2" value="x^3/3+C">(x^3)/3 + C<br>
+<input type="radio" name="q2" value="2x">2x<br>
+<p>3. What is the limit of sin(x)/x as x-> 0?</p>
+<input type="radio" name="q3" value="1">1<br>
+<input type="radio" name="q3" value="0">0<br>
+<input type="radio" name="q3" value="undefined">undefined<br>
+<p>4. What is the derivative of e^x?</p>
+<input type="radio" name="q4" value="ln|x|">ln|x|<br>
+<input type="radio" name="q4" value="1">1<br>
+<input type="radio" name="q4" value="e^x">e^x<br>
+<p>5. How do you take the integral of x^n?</p>
+<input type="radio" name="q4" value="((x+1)^n)/n + C">((x+1)^n)/n + C<br>
+<input type="radio" name="q4" value="x^(n+1)/(n+1) + C">x^(n+1)/(n+1) + C<br>
+<input type="radio" name="q5" value="x^(n-1)/n + C">x^(n-1)/n + C<br>
+<br>
+<button onclick="checkQuiz()">Submit</button>
+<p id="result"></p>
     </body>
 </html>
