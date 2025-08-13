@@ -2,7 +2,7 @@ function flipCard(card){
     card.classList.toggle("flip");
 }
 
-function checkQuiz(){
+function checkCalcQuiz(){
     let score=0;
     if (document.querySelector('input[name="q1"]:checked')?.value === "cos(x)") score++;
     if (document.querySelector('input[name="q2"]:checked')?.value === "x^3/3+C") score++;
