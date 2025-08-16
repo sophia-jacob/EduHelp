@@ -34,11 +34,11 @@ function checkEnglishQuiz(){
 
 function checkComputerQuiz(){
     let score=0;
-    if (document.querySelector('input[name="q1":checked')?.value === "number_2") score++;
-    if (document.querySelector('input[name="q2":checked')?.value === "2") score++;
-    if (document.querySelector('input[name="q3":checked')?.value === "class") score++;
-    if (document.querySelector('input[name="q4":checked')?.value === "queue") score++;
-    if (document.querySelector('input[name="q5":checked')?.value === "1") score++;
+    if (document.querySelector('input[name="q1"]:checked')?.value === "number_2") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "2") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "class") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "queue") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "1") score++;
     document.getElementById("result").textContent = "You score " + score + " out of 5.";
 
 
