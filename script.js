@@ -21,3 +21,13 @@ function checkBioQuiz(){
     if (document.querySelector('input[name="q5"]:checked')?.value === "mitochondria") score++;
     document.getElementById("result").textContent = "You score " + score + " out of 5.";
 }
+
+function checkEnglishQuiz(){
+    let score=0;
+    if (document.querySelector('input[name="q1"]:checked')?.value === "book") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "quickly") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "personification") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "late") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "times") score++;
+    document.getElementById("result").textContent = "You score " + score + " out of 5.";
+}
