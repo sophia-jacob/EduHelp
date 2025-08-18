@@ -7,6 +7,15 @@
 <link href="style.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <nav class="navbar">
+            <a class="subject" href="calc.html">Calculus</a>
+            <a class="subject" href="biology.html">Biology</a>
+            <a class="subject" href="english.html">English</a>
+            <a class="subject" href="computer.html">Computer Science</a>
+            <a class="subject" href="sat.html">SAT</a>
+            </nav>
+        </header>
         <h1>Flashcards</h1>
         <div class="flashcard-container">
             <div class="flashcard" onclick="flipCard(this)">
@@ -28,6 +37,10 @@
             <div class="flashcard" onclick="flipCard(this)">
                 <div class="front">What does this word mean: ambigious</div>
                 <div class="back">Open to more than one interpretation</div>
+            </div>
+            <div class="flashcard" onclick="flipCard(this)">
+                <div class="front">How do you find the median of a dataset?</div>
+                <div class="back">Order the numbers in ascending order and the middle number is the median (or the average of the 2 middle numbers)</div>
             </div>
         </div>
     </body>
