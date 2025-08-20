@@ -40,7 +40,9 @@ function checkComputerQuiz(){
     if (document.querySelector('input[name="q4"]:checked')?.value === "queue") score++;
     if (document.querySelector('input[name="q5"]:checked')?.value === "1") score++;
     document.getElementById("result").textContent = "You score " + score + " out of 5.";
+}
 
-
-
+function checkSATQuiz(){
+    let score=0;
+    if (document.querySelector('input[name="q1"]:checked')?.value === "8.75") score++;
 }
