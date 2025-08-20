@@ -45,4 +45,9 @@ function checkComputerQuiz(){
 function checkSATQuiz(){
     let score=0;
     if (document.querySelector('input[name="q1"]:checked')?.value === "8.75") score++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "550") score++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "effectiveness") score++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "clarity") score++;
+    if (document.querySelector('input[name="q5"]:checked')?.value === "decision") score++;
+    document.getElementById("result").textContent = "You score " + score + " out of 5.";
 }
